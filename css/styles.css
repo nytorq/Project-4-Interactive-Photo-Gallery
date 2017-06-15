@@ -31,11 +31,9 @@ h1 {
 }
 /* ---- Navigation, Headers, and Footers---- */
 footer {
-	min-height: 5em;
+	min-height: 9em;
   background-color: cornflowerblue;
   margin-top: 3em;
-	/*position: absolute;*/
-  /*bottom: 0;*/
   width: 100%;
 }
 
@@ -44,7 +42,8 @@ footer {
 	text-align: center;
 	font-size: 1.5em;
 	text-decoration: none;
-	padding: .5em;
+	display: block;
+	padding: 2em 0;
 }
 
 .material-icons {
@@ -88,6 +87,14 @@ input:focus {
 ==================================== */
 @media (min-width: 768px) {
     /* ---- General Layout Styles---- */
+
+		.back_to_top {
+			font-size: 2em;
+		}
+
+		.material-icons {
+			top: 3px;
+		}
 		/* ---- Pictures, Images, and Graphics ---- */
 		.photo {
 			width: 47.3%;
@@ -95,6 +102,18 @@ input:focus {
 		}
 
 		.image {
+			width: 100%;
+		}
+    /* ---- Labels & Inputs ---- */
+}
+
+@media (min-width: 1024px) {
+    /* ---- General Layout Styles---- */
+		.container {
+			max-width: 1024px;
+		}
+		/* ---- Pictures, Images, and Graphics ---- */
+		.photo {
 			width: 100%;
 		}
     /* ---- Labels & Inputs ---- */
