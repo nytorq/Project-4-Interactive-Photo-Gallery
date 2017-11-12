@@ -10,7 +10,7 @@ const search = () => {
       imageArray[i].style.display = "inherit";
     }
   }
-}
+};
 
 /*
 Create a variable for input.

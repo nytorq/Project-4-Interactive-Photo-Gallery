@@ -8,13 +8,13 @@
 
 body {
 	font-size: 12px;
-	background-color: #0e0e10;
+	background-color: #f1f1f1;
 	font-family: 'Raleway', Arial, Sans-serif;
 }
 
 h1 {
 	font-family: 'Playfair Display', serif;
-	color: #9cbfd4;
+	color: #2f2f2f;
 	font-size: 3.7em;
 	margin: 0.8em auto;
 }
@@ -29,16 +29,22 @@ h1 {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
+#photoGallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 /* ---- Navigation, Headers, and Footers---- */
 footer {
 	min-height: 9em;
-  background-color: cornflowerblue;
+  background-color: #153a75;
   margin-top: 3em;
   width: 100%;
 }
 
 .back_to_top {
-	color: #0e0e10;
+	color: #ffffff;
 	text-align: center;
 	font-size: 1.5em;
 	text-decoration: none;
@@ -59,14 +65,14 @@ input {
 	padding: 1.25em 1em;
 	width: 100%;
 	font-size: 1.3em;
-	border: 1px solid rgba(156, 191, 212, 0.5);
+	border: 1px solid rgba(21, 58, 117, 0.5);
 	background: transparent;
-	color: #c1c1c1;
+	color: #2f2f2f;
 	transition: border .15s ease-in;
 }
 
 input:hover {
-	border: 1px solid rgba(156, 191, 212, 1);
+	border: 1px solid rgba(21, 58, 117, 1);
 }
 
 input:focus {
@@ -75,16 +81,28 @@ input:focus {
 
 /* ---- Pictures, Images, and Graphics ---- */
 .photo {
-	width: 100%;
-	margin: 1em 0;
+	margin: 1.5em 0;
 }
 
 .image {
-	width: 100%;
+	width: 200px;
 }
 /* =================================
   Media Queries
 ==================================== */
+
+@media (min-width: 375px) {
+	.image {
+    width: 100%;
+	}
+}
+
+@media (min-width: 445px) {
+	#photoGallery {
+		justify-content: space-between;
+	}
+}
+
 @media (min-width: 768px) {
     /* ---- General Layout Styles---- */
 
@@ -95,6 +113,7 @@ input:focus {
 		.material-icons {
 			top: 3px;
 		}
+
 		/* ---- Pictures, Images, and Graphics ---- */
 		.photo {
 			width: 47.3%;
