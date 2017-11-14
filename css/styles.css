@@ -41,6 +41,8 @@ footer {
   background-color: #153a75;
   margin-top: 3em;
   width: 100%;
+	position: relative;
+	bottom: 0;
 }
 
 .back_to_top {
@@ -131,9 +133,17 @@ input:focus {
 		.container {
 			max-width: 1024px;
 		}
+
+		footer {
+			display: none;
+		}
 		/* ---- Pictures, Images, and Graphics ---- */
 		.photo {
-			width: 100%;
+			max-width: 20%;
+			margin: 1em;
 		}
     /* ---- Labels & Inputs ---- */
+		input {
+			width: 97.7%;
+		}
 }
