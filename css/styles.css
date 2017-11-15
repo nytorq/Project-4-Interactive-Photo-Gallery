@@ -118,7 +118,7 @@ input:focus {
 
 		/* ---- Pictures, Images, and Graphics ---- */
 		.photo {
-			width: 47.3%;
+			max-width: 200px;
     	margin-bottom: 2em;
 		}
 
@@ -139,7 +139,7 @@ input:focus {
 		}
 		/* ---- Pictures, Images, and Graphics ---- */
 		.photo {
-			max-width: 20%;
+			max-width: 200px;
 			margin: 1em;
 		}
     /* ---- Labels & Inputs ---- */
